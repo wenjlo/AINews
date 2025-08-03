@@ -22,3 +22,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+###Docker
+docker build -t news-app .
+docker run -d -p 8080:80 --name news-app-container news-app
