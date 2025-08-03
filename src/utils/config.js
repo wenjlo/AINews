@@ -1,0 +1,1 @@
+export const API_URL = 'https://backend-app-agz59.ondigitalocean.app';

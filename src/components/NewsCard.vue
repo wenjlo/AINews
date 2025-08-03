@@ -29,7 +29,7 @@
 
 <script>
 import axios from 'axios';
-
+import { API_URL } from '@/utils/config';
 export default {
   name: 'NewsCards',
   data() {
@@ -44,7 +44,7 @@ export default {
       this.loading = true;
       this.error = null;
       try {
-        const response = await axios.get('http://localhost:5000/api/news');
+        const response = await axios.get(`${API_URL}/api/news`);
         this.newsCards = response.data;
       } catch (error) {
         this.error = '無法載入新聞資料，請稍後再試。';
