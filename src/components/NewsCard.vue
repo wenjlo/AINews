@@ -17,7 +17,7 @@
             <img src="../assets/robot.svg" alt="AI icon" width="20" height="20" class="ai-icon" />
             {{ card.description }}
           </div>
-          <a :href="card.news_url" target="_blank" class="card-link">查看新聞</a>
+          <a :href="card.news_url" target="_blank" class="card-link">查看來源</a>
         </div>
       </div>
       
@@ -142,7 +142,7 @@ export default {
 
 .news-card {
   background-color: #fff;
-  border: 1px solid #e0e0e0;
+    border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
